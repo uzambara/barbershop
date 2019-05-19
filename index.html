@@ -4,30 +4,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
     <title>Барбершоп "Бородинский"</title>
 </head>
 
 <body>
     <header class="main-header">
-        <a class="main-header-logo">
-            <img src="img/index-logo.svg"
-                alt="Логотип барбршопа «Бородинский»" />
+        <a class="main-header__logo">
+            <img src="img/index-logo.svg" alt="Логотип барбршопа «Бородинский»" width="371" height="155" />
         </a>
-        <nav class="main-nav">
-            <ul class="site-nav">
-                <li><a>Информация</a></li>
-                <li><a>Новости</a></li>
-                <li><a>Прайс-лист</a></li>
-                <li><a>Магазин</a></li>
-                <li><a>Контакты</a></li>
-            </ul>
-            <ul class="user-nav">
-                <li class="login-link"><a>Вход</a></li>
+        <nav class="main-heade__site-nav">
+            <ul>
+                <li><a href="information.html">Информация</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="price-list.html">Прайс-лист</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </nav>
+        <div class="main-header__user-login">
+            <a class="main-header__input-link" href="login.html">
+                <img src="img/login.svg" alt="Вход" width="14" height="14">
+                Вход
+            </a>
+        </div>
     </header>
     <main class="container">
         <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
@@ -70,15 +72,14 @@
                     <time datetime="2016-01-18">18 января</time>
                 </li>
             </ul>
+            <a href="news.html">Все новости</a>
         </section>
 
         <section class="gallery">
             <h2>Фотогалерея</h2>
-            <a href="#"><img src="img/studio.jpg" alt="Интерьер"></a>
-            <span
-                class="button gallery-button gallery-button-back">Назад</span>
-            <span
-                class="button gallery-button gallery-button-next">Вперед</span>
+            <a href="#"><img src="img/office.jpg" alt="Интерьер" width="286" height="164"></a>
+            <button class="button gallery-button gallery-button-back">Назад</button>
+            <button class="button gallery-button gallery-button-next">Вперед</button>
         </section>
 
         <section class="contacts">
@@ -93,14 +94,40 @@
                 пн-пт: с 10:00 до 22:00<br>
                 сб-вс: с 10:00 до 19:00
             </p>
-            <a href="" class="button">Как проехать</a>
-            <a href="" class="button">Обратная связь</a>
+            <a href="#" class="button">Как проехать</a>
+            <a href="#" class="button">Обратная связь</a>
         </section>
 
         <section class="appointment">
-            <h2>Записаться</h2>
-            <p>Укажите желаемую дату и время и мы свяжемся с вами для
-                подтверждения брони</p>
+
+            <form method="GET" action="https://echo.htmlacademy.ru">
+                <h2>Записаться</h2>
+
+                <p>Укажите желаемую дату и время и мы свяжемся с вами для
+                    подтверждения брони
+                </p>
+
+                <p class="appointment__input">
+                    <label for="appointment-date">Дата</label>
+                    <input type="text" id="appointment-date" name="date" placeholder="08.10.2017">
+                </p>
+
+                <p class="appointment__input">
+                    <label for="appointment-time">Время</label>
+                    <input type="text" id="appointment-time" name="time" placeholder="10:00">
+                </p>
+
+                <p class="appointment__input">
+                    <label for="appointment-name">Борода</label>
+                    <input type="text" id="appointment-name" name="name" placeholder="Борода">
+                </p>
+
+                <p class="appointment__input">
+                    <label for="appointment-phone">Телефон</label>
+                    <input type="tel" id="appointment-phone" name="phone" placeholder="+7 123 456-78-90">
+                </p>
+                <button type="submit">Отправить</button>
+            </form>
         </section>
     </main>
     <footer class="main-footer">
@@ -123,18 +150,35 @@
             <b>Разработано</b>
             <a class="button" href="http://htmlacademy.ru">HTML Academy</a>
         </p>
-
-        <section class="modal modal-login">
+    </footer>
+    <section class="modal modal-login">
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
             <h2>Личный кабинет</h2>
             <p>Введите пожалуйста свой логин и пароль.</p>
-            <span class="modal-close">x</span>
-        </section>
+            
+            <p>
+                <input type="text" name="login" placeholder="Логин"></input>
+            </p>
 
-        <section class="modal modal-map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <span class="modal-close">x</span>
-        </section>
-    </footer>
+            <p>
+                <input type="text" name="password" placeholder="Пароль" ></input>
+            </p>
+
+            <p class="login-form__info">
+                <label><input type="checkbox" name="remember" placeholder="Логин">Запомнить меня</label>
+                <a class="restore-password" href="#">Я забыл пароль!</a>
+            </p>
+
+            <button type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button"><img src="img/grey-cross.svg" alt="Закрыть"></button>
+    </section>
+
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <img src="img/map.jpg" alt="Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+        <button class="modal-close" type="button"><img src="img/grey-cross.svg" alt="Закрыть"></button>
+    </section>
 </body>
 
 </html>
