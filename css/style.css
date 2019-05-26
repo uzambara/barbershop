@@ -1,0 +1,383 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    background-image: url(../img/index-main-background.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.button{
+    font: inherit;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    text-align: center;
+    background-color: black;
+    text-transform: uppercase;
+
+    color: white;
+    border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+.main-header{
+    background-color: black;
+}
+
+.main-heade__site-nav a{
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-header__input-link{
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-heade__site-nav a:hover,
+.main-heade__site-nav a:focus,
+.main-header__user-login a:hover,
+.main-header__user-login a:focus {
+  background-color: #242424;
+}
+
+.feature-item{
+    text-align: center;
+}
+
+.feature-item h3{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.feature-item p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.section-wrapper{
+    background-color: #faf7f4;
+    background-image: url(../img/main-white-background.jpg);
+    background-repeat: repeat;
+
+    color: black;
+}
+
+.section-wrapper h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.section-wrapper time{
+    text-transform: none;
+}
+
+.gallery-content{
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.appointment input{
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.appointment input:focus {
+    border-color: #663d15;
+}
+
+.main-footer{
+    color: #ffffff;
+
+    background-image: url(../img/footer-background.jpg);
+    background-repeat: repeat;
+    background-position: 0 0;
+}
+
+.footer-contacts a{
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+
+
+.footer-social{
+    text-align: center;
+}
+
+.social-button{
+    color: #ffffff;
+    background-color: black;
+}
+
+.footer-copyright{
+    text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.modal-login{
+    background-image: url(../img/main-white-background.jpg);
+    background-repeat: repeat;
+    color: #000000;
+    background-color: #f8f3f0;
+    background-position: 0 0;
+}
+
+.login-form h2{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    font: inherit;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+}
+
+.login-form > p > label:hover,
+.login-form > p > label:focus{
+    color: #663d15;
+}
+
+.restore-password{
+    color: black;
+    text-decoration: underline;
+}
+
+.restore-password:hover,
+.restore-password:focus{
+    text-decoration: none;
+}
+
+.inner-page{
+    color: #000000;
+
+    background-color: #f9f6f3;
+    background-image: url("../img/main-white-background.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+
+.page-title{
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.breadcrumbs a{
+    color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus{
+    text-decoration: underline;
+}
+
+.breadcrumbs-current{
+    color: #aba9a7;
+}
+
+.product-filters fieldset{
+    border: none;
+}
+
+.product-filters legend{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.product-filters ul{
+    line-height: 18px;
+}
+
+.product-filters li:hover,
+.product-filters li:focus{
+  color: #663d15;
+}
+
+.product-filters input:disabled + label{
+    color: #000000;
+    opacity: 0.5;
+}
+
+.catalog-item{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.catalog-item:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.catalog-list h3{
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.catalog-list h3 .product-type{
+    text-transform: none;
+}
+
+.catalog-item-price b{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    background-color: #e5e5e5;
+}
+
+.catalog-item-price .button{
+    line-height: 18px;
+}
+
+.pagination-item a {
+    color: #ffffff;
+    background-color: black;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: #663d15;
+}
+
+.pagination-item-current a{
+    color: black;
+    background-color: white;
+}
+
+
+.breadcrumbs li{
+    list-style: url(../img/black-shape.png)
+}
+
+.breadcrumbs li:first-child{
+    list-style: none;
+}
+
+.product-gallery li{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-big-photo{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-description-article{
+    color: #aeaeae;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.product-price b{
+    background-color: #e5e5e5;
+    text-align: center;
+}
+
+.product-goods ul{
+    list-style: url(../img/black-shape.png);
+
+}
+
+.product-goods-header{
+    line-height: 30px;
+    font-size: 24px;
+}
+
+.price-list-header{
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.price-list-content h3{
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.used-goods-list{
+    list-style: url(../img/black-shape.png);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.price-table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.price-table td{
+    border: 2px solid black;
+    width: 231px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.price-table  .good-name{
+    text-align: left;
+    padding-left: 19px;
+}
+
+.price-table  .good-price{
+    text-align: center;
+}
+
+/* :focus{
+    outline: none;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #2f7cc0;
+} */
+
